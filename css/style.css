@@ -680,13 +680,10 @@ h6 {
 
 @media screen and (max-width: 480px) {
     .pembuka{
+        width: 100%;
         padding-left: 10px;
         padding-right: 10px;
     }
-    /* main{
-        padding-left: 8px;
-        padding-right: 5px;
-    } */
     .slide-image {
         width: 480px;
         padding: 0;
@@ -735,5 +732,79 @@ h6 {
         width: 480px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .pembuka{
+        width: 360px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .slide-image {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+    #intro {
+        width: 100%;
+        border: 1px solid black;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .intro-image {
+        padding-left: 130px;
+        padding-right: 0;
+        width: 440px;
+        height: 280px;
+        margin: 20px 40px 0 50px;
+    }
+
+    blockquote{
+        padding-left: 160px;
+        padding-right: 0;
+    }
+
+    .quote{
+        padding-left: 160px;
+        padding-right: 0;
+    }
+
+    .prev,
+    .next {
+        top: 65%;
+    }
+    .next {
+        right: 4.5%;
+    }
+    .prev{
+        left: 38px;
+    }
+    .form{
+        margin-left: 170px;
+    }
+    .international, .national{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 80px;
+    }
+    .horisontal-line{
+        display: none;
+    }
+    .vertical-line{
+        margin-left: 100px;
+        margin-right: auto;
+    }
+    #title-package{
+        width: 480px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .closing{
+        width: 480px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
