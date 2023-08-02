@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Development</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="logo"
+                src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_200/https://pkk.uma.ac.id/wp-content/uploads/2023/06/revo.png"
+                alt="">
+            <ul class="list-item">
+                <a href="#intro">
+                    <li>Home</li>
+                </a>
+                <a href="#title-package">
+                    <li>Our Package</li>
+                </a>
+                <a href="#call-me">
+                    <li>Call Us</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="pembuka">
+        <h1> Hi, Welcome to <span id="namanya">Travellers </span></h1>
+        <p>Your happiness is our happiness</p>
+    </div>
+    <main>
+        <!-- INTRODUCTION PART-->
+        <div id="intro">
+            <div>
+                <div>
+                    <img class="intro-image" id="slider-intro"
+                    src="assets/bali.jpg" alt="">
+                    <img class="intro-image" id="slider-intro"
+                    src="assets/japan.jpg" alt="">
+                    <img class="intro-image" id="slider-intro"
+                    src="assets/singapore.jpg" alt="">
+                    
+                    <button class="prev" id="buttonprev"><</button>
+                    <button class="next" id="buttonnext">></button>
+                </div>
+                
+                <div class="intro-quote">
+                    <blockquote>
+                        "Temukan keajaiban alam, spa tepi sungai, dan pengalaman tak terlupakan bersama pasangan Anda"
+                    </blockquote>
+                    <div class="quote">
+                        <span class="material-symbols-outlined ">
+                            person
+                        </span>
+                        <div class="name-quote">
+                            <h6>Florence Hughes</h6>
+                            <p>Developer, 28</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="horisontal-line"></div>
+            </div>
+            <div id="form-user" class="form">
+                <h2>Contact Us</h2>
+                <p>Kami siap menghubungi anda 1x24 jam setelah data kami terima</p>
+                <form onsubmit="return validateForm()" action="">
+                    <div class="label-control">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" class="pick-control" placeholder="First and last name">
+                    </div>
+                    <div class="label-control">
+                        <label for="date">Email Address:</label>
+                        <input type="email" id="email" class="pick-control" placeholder="example@gmail.com">
+                    </div>
+                    <div class="label-control">
+                        <label for="interest">What are you interested in?</label>
+                        <select name="map" id="interest" class="pick-control">
+                            <option value="default">Select option</option>
+                            <option value="singapore">Singapore</option>
+                            <option value="japan">Japan</option>
+                            <option value="bali">Bali</option>
+                            <option value="surabaya">Surabaya</option>
+                            <option value="jakarta">Jakarta</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="submit" class="label-control">SEND</button>
+                    <p id="error-form"></p>
+                </form>
+            </div>
+        </div>
+        <!-- BENEFIT PART -->
+        <div class="benefit-title">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad excepturi optio reprehenderit, recusandae,
+                obcaecati quisquam vero qui eligendi consectetur quidem eos, quod labore. Ipsam autem ipsum sunt aperiam
+                eius laborum a accusantium explicabo corrupti quod! Labore eaque reprehenderit pariatur et ab quis
+                corrupti cupiditate enim qui, reiciendis nobis quisquam libero?</p>
+            <div class="container-list">
+                <div class="nomor">
+                    <h4 class="one">1</h4>
+                    <h4 class="two">2</h4>
+                    <h4>3</h4>
+                </div>
+                <div class="list-benefit">
+                    <p class="par">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, dignissimos?</p>
+                    <p class="par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, explicabo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cumque?</p>
+                </div>
+            </div>
+        </div>
+        <!-- OUR PACKAGE -->
+        <div class="package">
+            <h1 id="title-package">Our Package</h1>
+            <div class="location">
+                <div class="international">
+                    <div class="destination">
+                        <div class="destination-title">
+                            <span class="material-symbols-outlined">
+                                pin_drop
+                            </span>
+                            <h2>Bali</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="destination">
+                        <div class="destination-title">
+                            <span class="material-symbols-outlined">
+                                pin_drop
+                            </span>
+                            <h2>Japan</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="destination">
+                        <div class="destination-title">
+                            <span class="material-symbols-outlined">
+                                pin_drop
+                            </span>
+                            <h2>Singapore</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="national">
+                    <div class="destination">
+                        <div class="destination-title">
+                            <span class="material-symbols-outlined">
+                                pin_drop
+                            </span>
+                            <h2>Jakarta</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="destination">
+                        <div class="destination-title">
+                            <span class="material-symbols-outlined">
+                                pin_drop
+                            </span>
+                            <h2>Bandung</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="destination">
+                        <div class="destination-title">
+                            <span class="material-symbols-outlined">
+                                pin_drop
+                            </span>
+                            <h2>Surabaya</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CLOSING PART -->
+        <div class="closing">
+            <h1>Thank You for Visiting Our Website</h1>
+            <p>Until next time! Stay connected with us through social media or subscribe to our newsletter to get the
+                latest updates.</p>
+            <button type="button" id="call-me">CALL TO ACTION</button>
+        </div>
+    </main>
+    <footer>
+        <img src="https://assets-global.website-files.com/621804855324383d02afa44e/649992a5a4a9263ca8c65ebb_MAMC%20Logo.png"
+            class="footer-image" alt="">
+        <div class="footer up">
+            <h6>Terms of Service</h6>
+            <h6>Privacy Policy</h6>
+        </div>
+        <div class="footer down">
+            <h6>&copy; 2023</h6>
+            <h6>RevoU</h6>
+        </div>
+    </footer>
+    <script src = "js\script.js"></script>
+</body>
+
+</html>
